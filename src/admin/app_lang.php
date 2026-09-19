@@ -217,6 +217,9 @@ $lang['admin_modules_enable_all_success'] = 'Visi moduļi veiksmīgi ieslēgti.'
 $lang['admin_modules_enable_confirm'] = 'Vai tiešām vēlaties ieslēgt moduli: <b>%s</b>?';
 $lang['admin_modules_enable_error'] = 'Nevar aktivizēt moduli.';
 $lang['admin_modules_enable_success'] = 'Modulis veiksmīgi aktivizēts.';
+$lang['admin_modules_install_confirm'] = 'Vai tiešām vēlaties instalēt šo moduli?';
+$lang['admin_modules_install_error'] = 'Moduļa instalēšana neizdevās.';
+$lang['admin_modules_install_success'] = 'Modulis veiksmīgi instalēts.';
 $lang['admin_modules_install_tip'] = 'Moduļi pievieno jaunas funkcijas un funkcionalitāti jūsu lapai. Pārlūkojiet pieejamos moduļus <a href="%s" target="_blank" rel="noopener">moduļu direktorijā</a> vai augšupielādējiet vienu kā <b>.zip</b> pakotni.';
 
 /**
@@ -242,6 +245,9 @@ $lang['admin_plugins_enable_all_success'] = 'Visi spraudņi veiksmīgi ieslēgti
 $lang['admin_plugins_enable_confirm'] = 'Vai tiešām vēlaties ieslēgt spraudni: <b>%s</b>?';
 $lang['admin_plugins_enable_error'] = 'Nevar aktivizēt spraudni.';
 $lang['admin_plugins_enable_success'] = 'Spraudnis veiksmīgi aktivizēts.';
+$lang['admin_plugins_install_confirm'] = 'Vai tiešām vēlaties instalēt šo spraudni?';
+$lang['admin_plugins_install_error'] = 'Spraudņa instalēšana neizdevās.';
+$lang['admin_plugins_install_success'] = 'Spraudnis veiksmīgi instalēts.';
 $lang['admin_plugins_install_tip'] = 'Spraudņi paplašina esošās funkcijas ar papildu opcijām vai integrācijām. Instalējiet no <a href="%s" target="_blank" rel="noopener">spraudņu direktorijas</a> vai augšupielādējiet <b>.zip</b> failu.';
 
 /**
@@ -261,6 +267,9 @@ $lang['admin_themes_disable_success'] = 'Tēma veiksmīgi deaktivizēta.';
 $lang['admin_themes_enable_confirm'] = 'Vai tiešām vēlaties ieslēgt tēmu: <b>%s</b>?';
 $lang['admin_themes_enable_error'] = 'Nevar aktivizēt tēmu.';
 $lang['admin_themes_enable_success'] = 'Tēma veiksmīgi aktivizēta.';
+$lang['admin_themes_install_confirm'] = 'Vai tiešām vēlaties instalēt šo tēmu?';
+$lang['admin_themes_install_error'] = 'Tēmas instalēšana neizdevās.';
+$lang['admin_themes_install_success'] = 'Tēma veiksmīgi instalēta.';
 $lang['admin_themes_install_tip'] = 'Tēmas maina jūsu lapas izskatu un izkārtojumu. Izvēlieties no <a href="%s" target="_blank" rel="noopener">tēmu bibliotēkas</a> vai augšupielādējiet <b>.zip</b> failu, lai instalētu savu.';
 $lang['admin_themes_none_tip'] = 'Šī lietojumprogramma darbojas bez motīva. Instalējiet motīvu, lai pielāgotu publisko saskarni.';
 
@@ -306,12 +315,65 @@ $lang['admin_languages_enable_confirm'] = 'Vai tiešām vēlaties ieslēgt valod
 $lang['admin_languages_enable_error'] = 'Nevar ieslēgt valodu.';
 $lang['admin_languages_enable_error_nochange'] = 'Šī valoda jau ir ieslēgta.';
 $lang['admin_languages_enable_success'] = 'Valoda veiksmīgi ieslēgta.';
+$lang['admin_languages_install_confirm'] = 'Vai tiešām vēlaties instalēt šo valodu?';
+$lang['admin_languages_install_error'] = 'Valodas instalēšana neizdevās.';
+$lang['admin_languages_install_success'] = 'Valoda veiksmīgi instalēta.';
 $lang['admin_languages_install_tip'] = 'Valodas pievieno tulkojumus jūsu vietnes saskarnei un saturam. Pārlūkojiet pieejamās valodas <a href="%s" target="_blank" rel="noopener">valodu direktorijā</a> vai augšupielādējiet <b>.zip</b> pakotni, lai instalētu savu.';
 $lang['admin_languages_tip'] = 'Ieslēdziet, atspējojiet un iestatiet lapas noklusējuma valodu. Ieslēgtās valodas ir pieejamas lapas apmeklētājiem.';
 
 /**
  * ---------------------------------------------------------------
- * Updates & License Section
+ * Package Driver & Installation Messages
+ * ---------------------------------------------------------------
+ * Language lines for package installation, download, backup, and validation.
+ */
+$lang['package_already_exists'] = 'Pakotne jau pastāv.';
+$lang['package_archive_download_failed'] = 'Neizdevās lejupielādēt pakotnes arhīvu.';
+$lang['package_backup_create_error'] = 'Neizdevās izveidot pakotnes dublējumu.';
+$lang['package_backup_dir_failed'] = 'Neizdevās izveidot dublējuma direktoriju %s';
+$lang['package_backup_missing'] = 'Dublējuma fails neeksistē.';
+$lang['package_backup_path_error'] = 'Nevarēja atrisināt dublējuma faila ceļu.';
+$lang['package_backup_request_invalid'] = 'Nederīgs dublējuma pieprasījums.';
+$lang['package_backup_restore_error'] = 'Neizdevās atjaunot pakotnes dublējumu.';
+$lang['package_catalog_type_unknown'] = 'Nezināms kataloga tips.';
+$lang['package_checksum_error'] = 'Pakotnes kontroļsummas (checksum) pārbaude neizdevās.';
+$lang['package_copy_files_error'] = 'Neizdevās nokopēt pakotnes failus uz galamērķi.';
+$lang['package_copy_updates_error'] = 'Neizdevās nokopēt atjauninājuma failus uz galamērķi.';
+$lang['package_dest_dir_failed'] = 'Neizdevās izveidot mērķa direktoriju %s';
+$lang['package_destination_error'] = 'Nevarēja atrisināt pakotnes galamērķi.';
+$lang['package_download_dir_failed'] = 'Neizdevās izveidot lejupielādes direktoriju %s';
+$lang['package_download_empty'] = 'Pakotnes lejupielāde atgrieza tukšu atbildi.';
+$lang['package_download_request_invalid'] = 'Nederīgs pakotnes lejupielādes pieprasījums.';
+$lang['package_extract_failed'] = 'Neizdevās atarhivēt ZIP failu %s';
+$lang['package_invalid_lang_files'] = 'Nederīga valoda — trūkst lietotnes obligāto valodas failu.';
+$lang['package_invalid_lang_structure'] = 'Nederīga valoda — trūkst admin un/vai ci3 direktoriju.';
+$lang['package_invalid_missing_info'] = 'Nederīgs %s: trūkst "info.php".';
+$lang['package_invalid_module_structure'] = 'Nederīgs modulis — trūkst obligāto config un/vai controllers direktoriju.';
+$lang['package_invalid_plugin_boot'] = 'Nederīgs spraudnis (plugin) — trūkst "boot.php".';
+$lang['package_invalid_plugin_contents'] = 'Nederīgs spraudnis (plugin) — spraudņi nedrīkst saturēt kontrollerus vai skatus (views).';
+$lang['package_invalid_theme_boot'] = 'Nederīgs motīvs — trūkst "boot.php".';
+$lang['package_invalid_theme_views'] = 'Nederīgs motīvs — trūkst views direktorija.';
+$lang['package_no_root_dir'] = 'Pakotne nesatur saknes (root) direktoriju.';
+$lang['package_not_downloadable'] = 'Pakotne nav publiski lejupielādējama.';
+$lang['package_not_in_registry'] = 'Pakotne nav pieejama publiskajā reģistrā.';
+$lang['package_request_invalid'] = 'Nederīgs pakotnes pieprasījums.';
+$lang['package_rollback_request_invalid'] = 'Nederīgs atsaukšanas (rollback) pieprasījums.';
+$lang['package_root_mismatch'] = 'Pakotnes arhīva saknes direktorija neatbilst %s';
+$lang['package_single_root_required'] = 'Pakotnei jāsatur tieši viena saknes direktorija.';
+$lang['package_source_error'] = 'Nevarēja atrisināt pakotnes avotu.';
+$lang['package_system_core_restricted'] = 'Sistēmas komponentus nevar instalēt kā pakotnes.';
+$lang['package_temp_dir_failed'] = 'Neizdevās izveidot pagaidu direktoriju %s';
+$lang['package_type_unknown'] = 'Nezināms pakotnes tips.';
+$lang['package_update_request_invalid'] = 'Nederīgs pakotnes atjaunināšanas pieprasījums.';
+$lang['package_update_root_mismatch'] = 'Atjauninājuma arhīva saknes direktorija neatbilst %s.';
+$lang['package_upload_dir_failed'] = 'Neizdevās izveidot augšupielādes direktoriju %s';
+$lang['package_url_invalid'] = 'Nederīgs pakotnes izplatīšanas URL.';
+$lang['package_write_failed'] = 'Neizdevās ierakstīt pakotni direktorijā %s';
+$lang['package_zip_not_found'] = 'Pakotnes ZIP fails neeksistē: %s';
+
+/**
+ * ---------------------------------------------------------------
+ * Updates Section
  * ---------------------------------------------------------------
  * Language lines for updates section.
  */
